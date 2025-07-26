@@ -116,140 +116,10 @@ function Navbar() {
 }
 
 /*---> styles <---*/
-const MobileMenuWrapper = `
-  bg-white
-  flex
-  items-center
-  justify-center
-  w-fit
-  h-full
-  rounded-b-[10px]
-  px-5
-  cursor-pointer
-  lg:hidden
-`
-
-const StyledMenuIcon = `
-  text-[30px]
-  text-[#da392b]
-`
-
-const MobileMenuOverlay = `
-  fixed
-  top-0
-  right-0
-  w-full
-  h-screen
-  bg-white/80
-  z-[1000]
-  backdrop-blur-sm
-  xl:hidden
-`
-
-const MobileMenuContent = `
-  absolute
-  top-0
-  right-0
-  w-[300px]
-  h-screen
-  bg-[#f5f5f5]
-  p-5
-  flex
-  flex-col
-`
-
-const MobileMenuHeader = `
-  flex
-  justify-between
-  items-center
-  mb-10
-  pb-5
-  border-b
-  border-white/10
-`
-
-const CloseButton = `
-  bg-transparent
-  border-none
-  text-[#222]
-  cursor-pointer
-  p-2
-  rounded
-  transition-colors
-  duration-300
-  hover:bg-black/5
-`
-
-const MobileNavLinks = `
-  flex
-  flex-col
-  gap-5
-  mb-10
-  -mt-5
-`
-
-const MobileNavLink = `
-  text-[#222]
-  text-lg
-  font-medium
-  cursor-pointer
-  py-3
-  border-b
-  border-black/8
-  transition-colors
-  duration-300
-  hover:text-[#da392b]
-`
-
-const MobilePhoneSection = `
-  flex
-  items-center
-  gap-2.5
-  mb-5
-`
-
-const MobileLoginButton = `
-  bg-gradient-to-b
-  from-[#044f71]
-  to-[#0075aa]
-  text-white
-  border-none
-  w-full
-  h-[50px]
-  text-base
-  font-medium
-  rounded-[28px]
-  shadow-lg
-  shadow-white/15
-  transition-all
-  duration-300
-  hover:brightness-90
-  hover:shadow-xl
-  hover:shadow-white/25
-  focus:brightness-90
-  focus:text-white
-  focus:shadow-xl
-  focus:shadow-white/25
-`
-
-const LogoText = `
-  text-[2.2rem]
-  tracking-[0.05em]
-  font-normal
-  leading-none
-  flex
-  items-center
-  bg-gradient-to-b
-  from-[#044f71]
-  to-[#0075aa]
-  bg-clip-text
-  text-transparent
-  md:text-[1.7rem]
-`
-
 const MainWrapper = `
+  px-[20px] md:px-[40px] lg:px-[100px]
+
   h-[60px]
-  px-[100px]
   flex
   items-center
   justify-between
@@ -325,6 +195,91 @@ const ContactLink = `
   hover:text-white
   transition-all
   duration-500
+`
+
+const MobileMenuWrapper = `
+  bg-white
+  flex
+  items-center
+  justify-center
+  w-fit
+  h-full
+  rounded-b-[10px]
+  px-5
+  cursor-pointer
+  lg:hidden
+`
+
+const StyledMenuIcon = `
+  text-[30px]
+  !text-[#da392b]
+`
+
+const MobileMenuOverlay = `
+  fixed
+  top-0
+  right-0
+  w-full
+  h-screen
+  bg-white/80
+  z-[1000]
+  backdrop-blur-sm
+  xl:hidden
+`
+
+const MobileMenuContent = `
+  absolute
+  top-0
+  right-0
+  w-[300px]
+  h-screen
+  bg-[#f5f5f5]
+  p-5
+  flex
+  flex-col
+`
+
+const MobileMenuHeader = `
+  flex
+  justify-between
+  items-center
+  mb-10
+  pb-5
+  border-b
+  border-white/10
+`
+
+const CloseButton = `
+  bg-transparent
+  border-none
+  text-[#222]
+  cursor-pointer
+  p-2
+  rounded
+  transition-colors
+  duration-300
+  hover:bg-black/5
+`
+
+const MobileNavLinks = `
+  flex
+  flex-col
+  gap-5
+  mb-10
+  -mt-5
+`
+
+const MobileNavLink = `
+  text-[#222]
+  text-lg
+  font-medium
+  cursor-pointer
+  py-3
+  border-b
+  border-black/8
+  transition-colors
+  duration-300
+  hover:text-[#da392b]
 `
 
 export default Navbar

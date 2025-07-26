@@ -51,64 +51,50 @@ function MainContent() {
 
 /*---> styles <---*/
 const MainWrapper = `
+  h-[300px] md:h-[500px] lg:h-[800px]
+  mt-[-30px] lg:mt-[-60px]
   border
   border-transparent
   bg-[url('/images/main-background.jpg')]
   bg-no-repeat
   bg-center
   bg-cover
-  h-[800px]
-  -mt-[60px]
   relative
   overflow-hidden
   z-0
-  lg:h-[500px]
-  lg:-mt-[30px]
-  md:h-[300px]
 `
 
 const ContentWrapper = `
-  mt-[170px]
-  ml-[100px]
-  lg:mt-[100px]
-  lg:ml-10
-  md:mt-[100px]
-  md:ml-5
+  mt-[100px] lg:mt-[170px]
+  ml-[20px] md:ml-[40px] lg:ml-[100px]
 `
 
 const Title = `
-  font-['Suez']
-  text-[80px]
-  lg:text-[50px]
-  md:text-[30px]
+  text-[30px] md:text-[50px] lg:text-[80px]
+  [font-family:var(--font-suez)]
 `
 
 const Subtitle = `
-  text-2xl
-  mb-5
-  lg:text-xl
-  md:text-base
+  text-[16px] md:text-[20px] lg:text-[24px]
+  mb-[20px]
 `
 
 const AppStoesWrapper = `
+  flex
+  items-center
+  gap-[20px]
 `
 
 const AppleStore = `
-  mr-5
+  h-[35px] md:h-[40px]
+  w-[105px] md:w-[120px]
   cursor-pointer
-  w-[120px]
-  h-10
-  md:w-[105px]
-  md:h-[35px]
 `
 
 const GooglePlayStore = `
-  mr-5
+  h-[35px] md:h-[40px]
+  w-[117px] md:w-[137px]
   cursor-pointer
-  w-[137px]
-  h-10
-  md:w-[117px]
-  md:h-[35px]
 `
 
 export default MainContent

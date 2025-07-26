@@ -1,7 +1,7 @@
 import Navbar from '@/components/Layout/Navbar/Navbar'
 import Footer from '@/components/Layout/Footer/Footer'
 import type { Metadata } from 'next'
-import { Roboto, Kaushan_Script } from 'next/font/google'
+import { Roboto, Kaushan_Script, Suez_One } from 'next/font/google'
 import './globals.css'
 
 const roboto = Roboto({
@@ -12,6 +12,13 @@ const roboto = Roboto({
 })
 
 const kaushan = Kaushan_Script({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal'],
+  display: 'swap',
+})
+
+const suez = Suez_One({
   subsets: ['latin'],
   weight: ['400'],
   style: ['normal'],
@@ -33,7 +40,10 @@ export default function RootLayout({
       <body
         className={roboto.className}
         style={
-          { '--font-kaushan': kaushan.style.fontFamily } as React.CSSProperties
+          {
+            '--font-kaushan': kaushan.style.fontFamily,
+            '--font-suez': suez.style.fontFamily,
+          } as React.CSSProperties
         }
       >
         <Navbar />
