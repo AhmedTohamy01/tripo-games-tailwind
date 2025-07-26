@@ -48,41 +48,38 @@ function AboutTripo() {
 
 /*---> styles <---*/
 const MainWrapper = `
+  px-[15px] md:px-[0px]
   bg-[#f6f4f0]
   flex
   flex-col
   items-center
   justify-center
-  md:px-[15px]
 `
 
 const TextWrapper = `
 `
 
 const Title = `
-  font-['Suez']
-  text-[50px]
+  text-[26px] md:text-[50px]
   max-w-[720px]
   text-center
-  mb-5
-  md:text-[26px]
+  mb-[20px]
+  [font-family:var(--font-suez)]
 `
 
 const Subtitle = `
-  text-[21px]
-  mb-5
-  font-bold
+  text-[18px] md:text-[21px]
+  mb-[20px]
+  font-[700]
   mt-[50px]
   text-center
-  md:text-lg
 `
 
 const Text = `
-  text-lg
-  mb-10
+  text-[16px] md:text-[18px]
+  mb-[40px]
   max-w-[720px]
   text-center
-  md:text-base
 `
 
 const LearnMoreButton = `
@@ -93,41 +90,32 @@ const LearnMoreButton = `
   text-[#f6f4f0]
   border
   border-[#da392b]
-  rounded-lg
+  rounded-[8px]
   cursor-pointer
   text-center
-  transition-all
-  duration-500
-  mb-10
+  transition-all duration-500
+  mb-[40px]
   hover:bg-[#f6f4f0]
   hover:border-[#272443]
   hover:text-[#272443]
 `
 
 const AnimatedImage = `
+  w-[95%] md:w-[695px]
+  h-auto md:h-[395px]
   rounded-[20px]
-  w-[695px]
-  h-[395px]
   hover:opacity-80
-  transition-opacity
-  duration-500
-  md:w-[95%]
-  md:h-auto
+  transition-opacity duration-500
 `
 
 const AnimatedToy = `
+  w-[160px] md:w-[229px]
+  h-[176px] md:h-[246px]
+  mt-[-70px] md:mt-[-100px] md:lg-[-200px]
+  ml-[0px] xl:ml-[-650px]
   rounded-[20px]
   mb-[70px]
-  w-[229px]
-  h-[246px]
-  -mt-[200px]
-  -ml-[650px]
   z-[100]
-  lg:-mt-[100px]
-  lg:ml-auto
-  md:-mt-[70px]
-  md:w-[160px]
-  md:h-[176px]
 `
 
 export default AboutTripo
