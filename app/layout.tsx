@@ -1,4 +1,4 @@
-import Navbar from '@/components/Home/Navbar/Navbar'
+import Navbar from '@/components/Layout/Navbar/Navbar'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'

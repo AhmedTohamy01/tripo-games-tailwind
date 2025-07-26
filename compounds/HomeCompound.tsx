@@ -1,6 +1,12 @@
+import MainContent from '@/components/Home/MainContent/MainContent'
+
 /*---> Component <---*/
 function HomeCompound() {
-  return <></>
+  return (
+    <>
+      <MainContent />
+    </>
+  )
 }
 
 export default HomeCompound
