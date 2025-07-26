@@ -1,4 +1,5 @@
 import AboutTripo from '@/components/Home/AboutTripo/AboutTripo'
+import GetInTouch from '@/components/Home/GetInTouch/GetInTouch'
 import JoinTeam from '@/components/Home/JoinTeam/JoinTeam'
 import MainContent from '@/components/Home/MainContent/MainContent'
 import OurGames from '@/components/Home/OurGames/OurGames'
@@ -11,6 +12,7 @@ function HomeCompound() {
       <AboutTripo />
       <OurGames />
       <JoinTeam />
+      <GetInTouch />
     </>
   )
 }
