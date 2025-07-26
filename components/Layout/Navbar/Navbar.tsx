@@ -269,7 +269,6 @@ const MainWrapper = `
 const Logo = `
   w-[170px]
   bg-[#da392b]
-  font-['Kaushan']
   text-[26px]
   text-white
   flex
@@ -277,6 +276,7 @@ const Logo = `
   justify-center
   h-full
   rounded-b-[10px]
+  [font-family:var(--font-kaushan)]
 `
 
 const NavLinksWrapper = `
