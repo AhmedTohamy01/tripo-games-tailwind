@@ -64,20 +64,20 @@ function OurGames() {
 
 /*---> styles <---*/
 const MainWrapper = `
+  mt-[-50px] md:mt-[0px]
+  pr-[15px] md:pr-[0px]
+  pl-[15px] md:pl-[0px]
+  pb-[0px] md:pb-[100px]
   bg-[#f6f4f0]
   flex
   flex-col
   items-center
   justify-center
-  pb-[100px]
   overflow-hidden
-  md:px-[15px]
-  md:-mt-[50px]
 `
 
 const TextWrapper = `
-  mb-[100px]
-  sm:mb-[50px]
+  mb-[50px] sm:mb-[100px]
 `
 
 const ContentWrapper = `
@@ -92,44 +92,39 @@ const ContentWrapper = `
 `
 
 const Title = `
-  font-['Suez']
-  text-[50px]
+  text-[26px] md:text-[50px]
+  [font-family:var(--font-suez)]
   max-w-[720px]
   text-center
-  mb-5
-  md:text-[26px]
+  mb-[20px]
 `
 
 const Text = `
-  text-lg
-  mb-10
+  text-[16px] md:text-[18px]
+  mb-[40px]
   max-w-[720px]
   text-center
-  md:text-base
 `
 
 const FirstRowGames = `
-  flex
-  justify-between
-  z-[100]
+  flex-col xl1150:flex-row
+  gap-[30px] xl1150:gap-[0px]
+  mb-[30px] xl1150:mb-[450px]
+  items-center
+  justify-center xl1150:justify-between
   px-[160px]
-  mb-[450px]
-  xl:flex-col
-  xl:gap-[30px]
-  xl:mb-[30px]
-  xl:items-center
-  xl:justify-center
+  flex
+  z-[100]
 `
 
 const SecondRowGames = `
-  flex
-  justify-between
-  z-[100]
+  flex-col xl1150:flex-row
+  gap-[30px] xl1150:gap-[0px]
+  items-center
+  justify-center xl1150:justify-between
   px-[160px]
-  xl:flex-col
-  xl:gap-[30px]
-  xl:items-center
-  xl:justify-center
+  flex
+  z-[100]
 `
 
 const OurGamesIconWrapper = `

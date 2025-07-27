@@ -11,6 +11,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-kaushan: var(--font-kaushan);
+  --font-suez: var(--font-suez);
+  --breakpoint-xl1150: 1150px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -28,9 +28,9 @@ function GameCard({ imageUrl, name, category, description }: PropsType) {
           className={GameIcon}
           style={{ backgroundImage: `url(${imageUrl})` }}
         />
-        <div className={NameCategoryWrapper}>
+        <div>
           <div className={Name}>{name}</div>
-          <div className={Category}>{category}</div>
+          <div>{category}</div>
         </div>
       </div>
       <div className={CardBody}>{description}</div>
@@ -52,12 +52,10 @@ function GameCard({ imageUrl, name, category, description }: PropsType) {
 
 /*---> styles <---*/
 const MainWrapper = `
-  w-[390px]
+  p-[20px] sm:p-[50px]
+  w-fit sm:w-[390px]
   rounded-[20px]
   bg-white
-  p-[50px]
-  sm:w-fit
-  sm:p-5
 `
 
 const CardHeader = `
@@ -67,27 +65,20 @@ const CardHeader = `
 `
 
 const GameIcon = `
-  border-[7px]
-  border-white
+  border-[7px] border-white
   w-[90px]
   h-[90px]
   rounded-[20px]
   bg-center
   bg-contain
   shadow-[7.07px_7.07px_10px_0px_rgba(237,75,64,0.1)]
-  mr-5
+  mr-[20px]
   cursor-pointer
-`
-
-const NameCategoryWrapper = `
 `
 
 const Name = `
   text-[21px]
-  font-bold
-`
-
-const Category = `
+  font-[700]
 `
 
 const CardBody = `
@@ -98,7 +89,7 @@ const CardFooter = `
   flex
   items-center
   justify-between
-  gap-5
+  gap-[20px]
 `
 
 const AppStoreIcon = `
