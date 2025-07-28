@@ -77,7 +77,7 @@ const MainWrapper = `
 `
 
 const TextWrapper = `
-  mb-[50px] sm:mb-[100px]
+  mb-[50px] sm480:mb-[100px]
 `
 
 const ContentWrapper = `
