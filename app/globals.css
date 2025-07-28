@@ -14,6 +14,7 @@
   --font-suez: var(--font-suez);
   --breakpoint-xl1150: 1150px;
   --breakpoint-xl1100: 1100px;
+  --breakpoint-sm480: 480px;
 }
 
 @media (prefers-color-scheme: dark) {

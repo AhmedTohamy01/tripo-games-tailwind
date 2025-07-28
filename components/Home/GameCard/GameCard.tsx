@@ -52,8 +52,9 @@ function GameCard({ imageUrl, name, category, description }: PropsType) {
 
 /*---> styles <---*/
 const MainWrapper = `
-  p-[20px] sm:p-[50px]
-  w-fit sm:w-[390px]
+  p-[20px] sm480:p-[50px]
+  w-fit sm480:w-[390px]
+  min-w-[317px]
   rounded-[20px]
   bg-white
 `
