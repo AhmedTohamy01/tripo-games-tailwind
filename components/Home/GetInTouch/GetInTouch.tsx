@@ -150,14 +150,19 @@ function GetInTouch() {
 
 /*---> styles <---*/
 const MainWrapper = `
+  py-[100px] xl1100:py-[0px]
+  px-[15px] md:px-[100px]
+  h-fit xl1100:h-[600px]
+  flex-col xl1100:flex-row
+  justify-center xl1100:justify-between
+  items-center xl1100:items-start
+  gap-[30px] xl1100:gap-[0px]
   relative
+  bg-fixed
   bg-center
   bg-no-repeat
   bg-cover
-  h-[600px]
-  px-[100px]
   flex
-  justify-between
   z-0
   before:content-['']
   before:absolute
@@ -169,64 +174,49 @@ const MainWrapper = `
   before:z-[1]
   [&>*]:relative
   [&>*]:z-[2]
-  xl:px-[50px]
-  xl:h-fit
-  xl:flex-col
-  xl:justify-center
-  xl:items-center
-  xl:gap-[30px]
-  xl:py-[100px]
-  md:px-[15px]
 `
 
 const FormWrapper = `
-  w-[440px]
+  w-full sm:w-[440px]
+  mt-[0px] xl1100:mt-[-200px]
   bg-white
-  p-5
+  p-[20px]
   rounded-[20px]
-  -mt-[200px]
   h-fit
-  xl:mt-0
-  sm:w-full
 `
 
 const EmailFormWrapper = `
-  w-[390px]
-  h-[260px]
+  h-auto sm:h-[260px]
+  w-full sm:w-[390px]
+  mt-[0px] xl1100:mt-[160px]
   bg-[#da392b]
   text-white
-  p-6
+  p-[24px]
   rounded-[20px]
-  mt-[160px]
-  xl:mt-0
-  sm:w-full
-  sm:h-auto
 `
 
 const FormTitle = `
   text-[32px]
-  font-bold
+  font-[700]
   text-[#272443]
-  mb-5
+  mb-[20px]
 `
 
 const EmailFormTitle = `
-  text-2xl
-  font-bold
+  text-[21px] sm:text-[24px]
+  font-[700]
   mb-[30px]
-  sm:text-[21px]
 `
 
 const FormSubTitle = `
-  text-lg
+  text-[18px]
   mb-[30px]
 `
 
 const RowWrapper = `
-  flex
-  gap-5
+  block md:flex
+  gap-[20px]
   mb-[15px]
-  md:block
 `
 
 const SingleFieldWrapper = `
@@ -234,9 +224,8 @@ const SingleFieldWrapper = `
 `
 
 const FieldWrapper = `
-  w-1/2
-  md:w-full
-  md:mb-[15px]
+  w-full md:w-[50%]
+  mb-[15px] md:mb-[0px]
 `
 
 const TextAreaWrapper = `
@@ -269,8 +258,8 @@ const StyledInput = `
 `
 
 const StyledTextArea = `
-  h-[120px]
-  resize-none
+  !h-[120px]
+  !resize-none
   text-base
   font-normal
 `
@@ -284,44 +273,42 @@ const RedStar = `
 `
 
 const SubmitButton = `
-  rounded-[10px]
-  bg-[#272443]
-  text-white
+  !rounded-[10px]
+  !bg-[#272443]
+  !text-white
   border-none
   text-base
   font-normal
-  leading-6
+  leading-[24px]
   w-full
-  h-[44px]
+  !h-[44px]
   mt-[10px]
-  mb-5
-  hover:bg-[#da392b]
-  hover:text-white
-  focus:bg-[#da392b]
-  focus:text-white
-  sm:w-full
+  mb-[20px]
+  hover:!bg-[#da392b]
+  hover:!text-white
+  focus:!bg-[#da392b]
+  focus:!text-white
 `
 
 const JoinButton = `
-  rounded-[10px]
-  bg-[#fcff72]
-  text-[#272443]
+  !rounded-[10px]
+  !bg-[#fcff72]
+  !text-[#272443]
   border
   border-[#fcff72]
   text-base
   font-normal
-  leading-6
+  leading-[24px]
   w-full
-  h-[44px]
+  !h-[44px]
   mt-[15px]
-  mb-5
-  hover:bg-[#f6f4f0]
-  hover:border-[#f6f4f0]
-  hover:text-[#272443]
-  focus:bg-[#f6f4f0]
-  focus:border-[#f6f4f0]
-  focus:text-[#272443]
-  sm:w-full
+  mb-[20px]
+  hover:!bg-[#f6f4f0]
+  hover:!border-[#f6f4f0]
+  hover:!text-[#272443]
+  focus:!bg-[#f6f4f0]
+  focus:!border-[#f6f4f0]
+  focus:!text-[#272443]
 `
 
 export default GetInTouch
