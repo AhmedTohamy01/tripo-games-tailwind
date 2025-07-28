@@ -177,7 +177,7 @@ const MainWrapper = `
 `
 
 const FormWrapper = `
-  w-full sm:w-[440px]
+  w-full sm480:w-[440px]
   mt-[0px] xl1100:mt-[-200px]
   bg-white
   p-[20px]
@@ -186,8 +186,8 @@ const FormWrapper = `
 `
 
 const EmailFormWrapper = `
-  h-auto sm:h-[260px]
-  w-full sm:w-[390px]
+  h-auto sm480:h-[260px]
+  w-full sm480:w-[390px]
   mt-[0px] xl1100:mt-[160px]
   bg-[#da392b]
   text-white
@@ -203,7 +203,7 @@ const FormTitle = `
 `
 
 const EmailFormTitle = `
-  text-[21px] sm:text-[24px]
+  text-[21px] sm480:text-[24px]
   font-[700]
   mb-[30px]
 `
