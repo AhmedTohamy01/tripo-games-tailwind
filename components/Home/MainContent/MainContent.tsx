@@ -55,7 +55,7 @@ const MainWrapper = `
   mt-[-30px] lg:mt-[-60px]
   border
   border-transparent
-  bg-[url('/images/main-background.jpg')]
+  bg-[url('/images/main-background.avif')]
   bg-no-repeat
   bg-[0_center]
   bg-cover

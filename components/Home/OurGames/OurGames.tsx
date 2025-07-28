@@ -48,7 +48,7 @@ function OurGames() {
           />
           <div className={OurGamesIconWrapper}>
             <motion.img
-              src={'/images/games-icon.png'}
+              src={'/images/games-icon.avif'}
               alt={'Games Icon'}
               className={OurGamesIcon}
               initial={{ opacity: 0, y: 50 }}
@@ -81,7 +81,7 @@ const TextWrapper = `
 `
 
 const ContentWrapper = `
-  bg-[url('/images/games-bg.png')]
+  bg-[url('/images/games-bg.avif')]
   bg-no-repeat
   bg-center
   bg-cover

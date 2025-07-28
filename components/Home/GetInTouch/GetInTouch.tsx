@@ -30,7 +30,7 @@ function GetInTouch() {
   return (
     <div
       className={MainWrapper}
-      style={{ backgroundImage: "url('/images/newsletter-background.png')" }}
+      style={{ backgroundImage: "url('/images/newsletter-background.avif')" }}
     >
       {contextHolder}
       <motion.div

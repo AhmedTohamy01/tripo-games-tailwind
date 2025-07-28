@@ -27,7 +27,7 @@ function AboutTripo() {
       </motion.div>
       <button className={LearnMoreButton}>Learn More</button>
       <motion.img
-        src={'/images/game-designers.png'}
+        src={'/images/game-designers.avif'}
         alt={'Game Designers'}
         className={AnimatedImage}
         initial={{ opacity: 0, y: 50 }}
@@ -35,7 +35,7 @@ function AboutTripo() {
         transition={{ duration: 3, ease: 'easeOut' }}
       />
       <motion.img
-        src={'/images/game-designers-toy.png'}
+        src={'/images/game-designers-toy.avif'}
         alt={'Game Designers Toy'}
         className={AnimatedToy}
         initial={{ opacity: 0, y: 50 }}

@@ -13,7 +13,7 @@ function JoinTeam() {
     <motion.div
       ref={ref}
       className={MainWrapper}
-      style={{ backgroundImage: "url('/images/join-team-background.png')" }}
+      style={{ backgroundImage: "url('/images/join-team-background.avif')" }}
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 2, ease: 'easeOut' }}
@@ -33,7 +33,7 @@ function JoinTeam() {
         transition={{ duration: 2, ease: 'easeOut' }}
       >
         <Image
-          src='/images/join-team-img.png'
+          src='/images/join-team-img.avif'
           width={400}
           height={340}
           alt='join team image'
