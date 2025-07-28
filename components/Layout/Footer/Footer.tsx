@@ -9,10 +9,10 @@ const Footer = () => {
         <div className={FooterColumn}>
           <h3 className={FooterTitle}>Contact</h3>
           <div className={FooterTextGroup}>
-            <div className={FooterText}>Info@mysite.com</div>
-            <div className={FooterText}>Tel: 123-456-7890</div>
-            <div className={FooterText}>500 Terry Francine St</div>
-            <div className={FooterText}>San Francisco, CA 94158</div>
+            <div>Info@mysite.com</div>
+            <div>Tel: 123-456-7890</div>
+            <div>500 Terry Francine St</div>
+            <div>San Francisco, CA 94158</div>
           </div>
         </div>
         {/* Navigation */}
@@ -20,16 +20,16 @@ const Footer = () => {
           <h3 className={FooterTitle}>Navigation</h3>
           <div className={FooterNavGroup}>
             <Link href='/games' passHref legacyBehavior>
-              <div className={FooterText}>Games</div>
+              <div>Games</div>
             </Link>
             <Link href='/careers' passHref legacyBehavior>
-              <div className={FooterText}>Careers</div>
+              <div>Careers</div>
             </Link>
             <Link href='/about' passHref legacyBehavior>
-              <div className={FooterText}>About</div>
+              <div>About</div>
             </Link>
             <Link href='/contact' passHref legacyBehavior>
-              <div className={FooterText}>Contact</div>
+              <div>Contact</div>
             </Link>
           </div>
         </div>
@@ -38,16 +38,16 @@ const Footer = () => {
           <h3 className={FooterTitle}>Social</h3>
           <div className={FooterNavGroup}>
             <Link href='https://discord.com/' passHref legacyBehavior>
-              <div className={FooterText}>Discord</div>
+              <div>Discord</div>
             </Link>
             <Link href='https://youtube.com/' passHref legacyBehavior>
-              <div className={FooterText}>YouTube</div>
+              <div>YouTube</div>
             </Link>
             <Link href='https://facebook.com/' passHref legacyBehavior>
-              <div className={FooterText}>Facebook</div>
+              <div>Facebook</div>
             </Link>
             <Link href='https://x.com/' passHref legacyBehavior>
-              <div className={FooterText}>X</div>
+              <div>X</div>
             </Link>
           </div>
         </div>
@@ -77,11 +77,9 @@ const Footer = () => {
 
 /*---> styles <---*/
 const FooterWrapper = `
-  border-t
-  border-[#e0e0e0]
+  border-t border-[#e0e0e0]
   pt-12
   pb-6
-  font-['Inter']
   bg-[#f6f4f0]
 `
 
@@ -96,13 +94,13 @@ const FooterContainer = `
 
 const FooterColumn = `
   min-w-[200px]
-  mb-8
+  mb-[32px]
 `
 
 const FooterTitle = `
-  font-bold
-  text-lg
-  mb-4
+  font-[700]
+  text-[18px]
+  mb-[16px]
 `
 
 const FooterTextGroup = `
@@ -120,13 +118,10 @@ const FooterNavGroup = `
   gap-[2px]
 `
 
-const FooterText = `
-`
-
 const StoreBadges = `
   flex
   flex-col
-  gap-3
+  gap-[12px]
 `
 
 const StoreImg = `
@@ -136,18 +131,12 @@ const StoreImg = `
 `
 
 const CopyrightBar = `
-  border-t
-  border-[#e0e0e0]
-  mt-8
-  pt-4
+  border-t border-[#e0e0e0]
+  mt-[32px]
+  pt-[16px]
   text-center
   text-[#888]
-  text-sm
-`
-
-const CopyrightLink = `
-  text-[#888]
-  underline
+  text-[14px]
 `
 
 export default Footer
