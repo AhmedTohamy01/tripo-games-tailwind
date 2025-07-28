@@ -45,34 +45,31 @@ function JoinTeam() {
 
 /*---> styles <---*/
 const MainWrapper = `
+  px-[15px] md:px-[50px] lg:px-[100px]
+  bg-fixed
   bg-center
   bg-no-repeat
   bg-cover
   h-[670px]
-  px-[100px]
   flex
   flex-col
   justify-between
-  lg:px-[50px]
-  md:px-[15px]
 `
 
 const Title = `
-  font-['Suez']
-  text-[50px]
+  text-[26px] md:text-[50px]
+  [font-family:var(--font-suez)]
   max-w-[720px]
-  mb-10
+  mb-[40px]
   text-white
-  md:text-[26px]
 `
 
 const Subtitle = `
-  text-[21px]
-  mb-5
-  font-bold
+  text-[18px] md:text-[21px]
+  mb-[20px]
+  font-[700]
   mt-[50px]
   text-white
-  md:text-lg
 `
 
 const TextWrapper = `
@@ -82,7 +79,7 @@ const TextWrapper = `
 const ImageWrapper = `
   flex
   justify-end
-  -mt-[150px]
+  mt-[-150px]
 `
 
 const ExploreButton = `
@@ -91,13 +88,11 @@ const ExploreButton = `
   text-base
   bg-[#fcff72]
   text-black
-  border
-  border-[#fcff72]
-  rounded-lg
+  border  border-[#fcff72]
+  rounded-[8px]
   cursor-pointer
   text-center
-  transition-all
-  duration-500
+  transition-all duration-500
   hover:bg-[#f6f4f0]
   hover:border-[#f6f4f0]
   hover:text-[#272443]
