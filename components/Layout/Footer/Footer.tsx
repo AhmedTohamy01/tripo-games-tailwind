@@ -19,16 +19,16 @@ const Footer = () => {
         <div className={FooterColumn}>
           <h3 className={FooterTitle}>Navigation</h3>
           <div className={FooterNavGroup}>
-            <Link href='/games' passHref legacyBehavior>
+            <Link href='/games' passHref>
               <div>Games</div>
             </Link>
-            <Link href='/careers' passHref legacyBehavior>
+            <Link href='/careers' passHref>
               <div>Careers</div>
             </Link>
-            <Link href='/about' passHref legacyBehavior>
+            <Link href='/about' passHref>
               <div>About</div>
             </Link>
-            <Link href='/contact' passHref legacyBehavior>
+            <Link href='/contact' passHref>
               <div>Contact</div>
             </Link>
           </div>
@@ -37,16 +37,16 @@ const Footer = () => {
         <div className={FooterColumn}>
           <h3 className={FooterTitle}>Social</h3>
           <div className={FooterNavGroup}>
-            <Link href='https://discord.com/' passHref legacyBehavior>
+            <Link href='https://discord.com/' passHref>
               <div>Discord</div>
             </Link>
-            <Link href='https://youtube.com/' passHref legacyBehavior>
+            <Link href='https://youtube.com/' passHref>
               <div>YouTube</div>
             </Link>
-            <Link href='https://facebook.com/' passHref legacyBehavior>
+            <Link href='https://facebook.com/' passHref>
               <div>Facebook</div>
             </Link>
-            <Link href='https://x.com/' passHref legacyBehavior>
+            <Link href='https://x.com/' passHref>
               <div>X</div>
             </Link>
           </div>
@@ -115,7 +115,6 @@ const FooterNavGroup = `
   leading-[1.8]
   flex
   flex-col
-  gap-[2px]
 `
 
 const StoreBadges = `
