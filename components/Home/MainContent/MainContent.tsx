@@ -57,7 +57,7 @@ const MainWrapper = `
   border-transparent
   bg-[url('/images/main-background.jpg')]
   bg-no-repeat
-  bg-center
+  bg-[0_center]
   bg-cover
   relative
   overflow-hidden
