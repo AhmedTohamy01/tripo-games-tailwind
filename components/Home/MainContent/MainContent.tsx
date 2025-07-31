@@ -28,7 +28,13 @@ function MainContent() {
   }, [])
 
   return (
-    <motion.div ref={backgroundRef} className={MainWrapper}>
+    <motion.div
+      ref={backgroundRef}
+      className={MainWrapper}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2, ease: 'easeOut' }}
+    >
       <div className={ContentWrapper}>
         <div className={Title}>Made to Be Played</div>
         <div className={Subtitle}>The Very Best in Mobile Gaming</div>

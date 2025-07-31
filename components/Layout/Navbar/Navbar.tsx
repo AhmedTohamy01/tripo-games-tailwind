@@ -38,9 +38,12 @@ function Navbar() {
   }
 
   return (
-    <div
+    <motion.div
       ref={ref}
       className={MainWrapper}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2, ease: 'easeOut' }}
       style={{
         opacity: scrollY > 100 ? 0 : 1,
         transform: scrollY > 100 ? 'translateY(-20px)' : 'translateY(0)',
@@ -111,14 +114,13 @@ function Navbar() {
           </div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   )
 }
 
 /*---> styles <---*/
 const MainWrapper = `
   px-[20px] md:px-[40px] lg:px-[100px]
-
   h-[60px]
   flex
   items-center
